@@ -1,8 +1,8 @@
-list comprehension
+# list comprehension
 
-syntax: [ <expression> for x in <sequence> if <condition>] 
+# syntax: [ <expression> for x in <sequence> if <condition>] 
 
-examples:
+# examples:
 data = [2,3,5,7,11,13,17,19,23,29,31]
 
 # Ex1: List comprehension: updating the same list
@@ -26,11 +26,11 @@ nines = [x for x in range(100) if x%9 == 0]
 print("Nines: ", nines)
 
 
-Dictionary comprehensions:
+# Dictionary comprehensions:
 
-syntax: dict = { key:value for key, value in <sequence> if <condition> } 
+# syntax: dict = { key:value for key, value in <sequence> if <condition> } 
 
-examples:
+# examples:
 # Using range() function and no input list
 usingrange = {x:x*2 for x in range(12)}
 print("Using range(): ",usingrange)
