@@ -1,4 +1,4 @@
-from unicodedata import name
+# single inheritance
 
 
 class Apartments:
@@ -23,3 +23,20 @@ third = Distance("Victorias", "Town campus")
 
 print(second.giveDistance(50))
 print(first.floors)
+
+
+# multiple inheritance
+
+class BioData:
+    def __init__(self, firstName, lastName) -> None:
+        self.firstName = firstName
+        self.lastName = lastName
+
+class Course:
+    course = "Computer Science"
+
+class FullData(BioData, Course):
+    pass
+
+someData = FullData("Paul", "Mutemi")
+print("Hello, my name is " + someData.firstName, someData.lastName + ".I take", someData.course)
