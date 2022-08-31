@@ -40,3 +40,25 @@ class FullData(BioData, Course):
 
 someData = FullData("Paul", "Mutemi")
 print("Hello, my name is " + someData.firstName, someData.lastName + ".I take", someData.course)
+
+
+# Multi-level inheritance example
+class A:
+   a = 1
+
+class B(A):
+   a = 2
+
+class C(B):
+   pass
+
+c = C()
+print(c.a)
+
+"""
+The o​utput is 2 because C derives from the immediate super class of C, and that's B.
+
+The case above is an example of multi-level inheritance where the derived class C inherits from base class B. 
+The class B is in turn a derived class of base class C. Class B here is an intermediary derived class. 
+There are three levels of inheritance in this case, but it could be extended as long as I want, though it may become impractical after a while.
+"""
