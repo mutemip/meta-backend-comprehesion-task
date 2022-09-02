@@ -78,5 +78,8 @@ def main():
     s.withdraw(30)
     s.withdraw(1000)
 
+    # mro - method order resolution -> knowing which class inherits from which(in simple terms haha..)
+    print(Swiss.mro())
+
 if __name__ == "__main__":
     main()
