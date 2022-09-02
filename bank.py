@@ -79,7 +79,7 @@ def main():
     s.withdraw(30)
     #s.withdraw(1000)
 
-    # mro - method order resolution -> knowing which class inherits from which(in simple terms haha..)
+    # mro - method resolution order-> knowing which class inherits from which(in simple terms haha..)
     #  MRO is Python’s way of resolving the order of precedence of classes while dealing with inheritance.
 
 
