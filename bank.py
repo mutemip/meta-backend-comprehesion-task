@@ -1,5 +1,6 @@
 # Import ABC and abstractmethod from the module abc (which stands for abstract base classes)
 from abc import ABC, abstractmethod
+from calendar import c
 
 # Class Bank
 class Bank(ABC):
@@ -76,10 +77,16 @@ def main():
     s = Swiss()
     print(s.basicinfo())
     s.withdraw(30)
-    s.withdraw(1000)
+    #s.withdraw(1000)
 
     # mro - method order resolution -> knowing which class inherits from which(in simple terms haha..)
+    #  MRO is Python’s way of resolving the order of precedence of classes while dealing with inheritance.
+
+
     print(Swiss.mro())
+
+    #the help function
+    print(help(c))
 
 if __name__ == "__main__":
     main()
